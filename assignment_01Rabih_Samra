@@ -15,15 +15,6 @@ if n < m:
 
 
 
-# Exercise number 2:
-# int (input("n"))
-# while i (1, n + 1):
-#   if i % 2 != 0:
-#     if product > 100:
-#      print ("done")
-#     break
-# will try again and focus, for the readers, consider this as a draft
-
 # n= int(input("n"))
 # x = 1
 
@@ -47,28 +38,82 @@ if n < m:
 #     x += 1 
 
 
-n <= 100
-x = 1  
-i = 1
-while x <= n:
-    if x % 2 != 0:  
-        i*= x  
-        if i > 100:  
-            print("Multiplication exceeded")
-    x += 1
-if i == 1 and x > 1:  
-    print("x")
+# Excercise 2:
+
+
+n = int(input("Enter a number: "))
+
+if n <= 100:
+    x = 1
+    multi = 1
+    odd_multi = 1
+
+    while x <= n:
+        if x % 2 != 0:
+            multi *= x
+            odd_multi *= x
+
+            if multi > 100:
+                print("Multiplication exceeded 100.")
+                break
+        x += 1
+
+    if multi < 100 and odd_multi > multi:
+        print("The largest multiplication of odd numbers less than 100 is:", odd_multi)
+    elif multi < 100:
+        print("The multiplication of odd numbers is:", multi)
 else:
-    print("i", i) 
+    print("Please enter a number less than or equal to 100.")
     
 
 
 
 # Exercise 3:
 
+# n = 0
+# x = 0
+# # score = 0
+
+# while score != -1:
+#     score = int(input("enter a score (-1 to stop):"))
+#     if score != -1:
+#         n = n + score
+#         x = x + 1
+#     if x == 0:
+#         print("no score", no score)
+#     elif score == n/x:
+#         print("score", score)
+
+# Excersice 3:
+
+n = 0
+x = 0
+score = 0
+
+while score != -1:
+    score = int(input("enter a score (-1 to stop):"))
+    if score != -1:
+        n = n + score
+        x = x + 1
+
+if x == 0:
+    print("no score")
+else:
+    average = n / x
+    print("average:", average)
+    
 
 
 
 
-
+# Exercise 4:
+int(input("enter four- digit integer"))
+A = number // 1000
+B = (number % 1000) // 100
+C = (number % 100) // 10
+D = number % 10
+if A + B == C + D:
+    print("F")
+elif A + B != C + D:
+    print ("U")
 

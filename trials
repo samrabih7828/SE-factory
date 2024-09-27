@@ -1,1 +1,88 @@
+# number = int(input("Enter a four-digit integer: "))
+
+# # Extract digits
+# A = number // 1000
+# B = (number % 1000) // 100
+# C = (number % 100) // 10
+# D = number % 10
+
+# if A + B == C + D:
+#     print("F")
+# else:
+#     print("U")
+
+
+
+
+
+# # calculate value of C
+# A = 5
+# B = 10
+
+# C = (A + B) / 2
+# if A < B: 
+#     print ("The value of C is", C)
+
+
+
+# A = 150
+# B = 50
+# C = A / B
+# print("The value of C is", C)
+
+
+
+# print(" My name is Rabih")
+
+
+# C = 30
+# F = 30 * (9/5) + 32
+# print("The temperature in Fahrenheit is:", F)
+
+
+
+
+
+
+# temperature = int(input("Enter the temperature in Celsius: "))
+
+# if temperature <= -20:
+#     print("Peter must wear very warm clothes")
+# elif temperature <= 0:
+#     print("Peter must wear warm clothes")
+# elif temperature > 20:
+#     print("Peter must be hydrated")
+# else:
+#     print("Peter must be happy")
+
+
+
+# recruited_conditions = int(input("Enter the number of conditions met (0-4): "))
+
+# american_passport = True  # Assuming this is a boolean value
+# bachelor_degree = True  # Assuming this is a boolean value
+# lebanese = True  # Assuming this is a boolean value
+# legal_age = True  # Assuming this is a boolean value
+
+# if recruited_conditions == 4:
+#     print("Recruited")
+# else:
+#     print("Not recruited")
+
+
+# if i want to to input 10 values and calculate their sum:
+i = 1
+sum = 0
+while(i<= 10):
+    n=int(input())
+    if (n != -1):
+        break
+    else:
+        sum += n
+
+        i += 1
+        print(sum)
+
+
+
 
